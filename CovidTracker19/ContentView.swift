@@ -9,8 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView{
+            Home()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            MapPage()
+                .tabItem{
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+            SafeteyPage()
+                .tabItem{
+                    Image(systemName: "cross.case")
+                    Text("Safetey")
+                }
+        }.accentColor(.red)
     }
 }
 
@@ -19,3 +34,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+var screen = UIScreen.main.bounds
