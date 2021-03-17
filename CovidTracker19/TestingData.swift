@@ -34,7 +34,7 @@ struct TestingData: View {
             Text("recovered today: \(globalData.todayRecovered)")
         }
         .onAppear{
-            print(globalData.active = 7)
+            
             Api().getAllData { (globalData) in
                 self.globalData = globalData
             }

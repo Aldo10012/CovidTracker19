@@ -10,8 +10,8 @@ import SwiftUI
 struct GlobalUpdateCard: View {
     @State var color: Color
     @State var topic: String
-    @State var total: Int
-    @State var today: Int
+    @Binding var total: Int
+    @Binding var today: Int
     
     var body: some View {
         VStack(alignment: .leading,spacing: 15) {
@@ -41,6 +41,6 @@ struct GlobalUpdateCard: View {
 
 struct GlobalUpdateCard_Previews: PreviewProvider {
     static var previews: some View {
-        GlobalUpdateCard(color: .red, topic: "Deaths", total: 97621762, today: 3399)
+        GlobalUpdateCard(color: .red, topic: "Deaths", total: .constant(12345), today: .constant(3399))
     }
 }

@@ -8,37 +8,65 @@
 import SwiftUI
 
 struct Home: View {
+    @State var globalData: GlobalData = GlobalData(
+        active: 0,
+        deaths: 0,
+        todayDeaths: 0,
+        recovered: 0,
+        todayRecovered: 0)
+    
+    
+    
     var body: some View {
         ZStack {
             RedBackground()
             
             VStack(){
                 // headings at top of page
-                VStack(){
-                    Text("Todays News")
-                        .frame(width: screen.width, alignment: .leading)
-                        .font(Font.system(size: 30, weight: .bold))
-                        .foregroundColor(.white)
-                        .padding(.bottom, 25)
+                VStack{
+                    VStack(){
+                        Text("Todays News")
+                            .frame(width: screen.width, alignment: .leading)
+                            .font(Font.system(size: 30, weight: .bold))
+                            .foregroundColor(.white)
+                            .padding(.bottom, 25)
+                        
+                        
+                        Text("Total Active Cases")
+                            .frame(width: screen.width, alignment: .leading)
+                            .font(Font.system(size: 17, weight: .light))
+                            .foregroundColor(.white)
+                        
+                        Text("\(globalData.active)")
+                            .frame(width: screen.width, alignment: .leading)
+                            .font(Font.system(size: 20, weight: .bold))
+                            .foregroundColor(.white)
+                    }.padding(.leading, 45)
+                    .padding(.bottom, 10)
                     
                     
-                    Text("Total Active Cases")
-                        .frame(width: screen.width, alignment: .leading)
-                        .font(Font.system(size: 17, weight: .light))
-                        .foregroundColor(.white)
+                    // cards displaying deaths & recoveries
+                    HStack(spacing: 15){
+                        
+                        GlobalUpdateCard(color: .red, topic: "Deaths",
+                                         total: $globalData.deaths,
+                                         today: $globalData.todayDeaths)
+
+                        
+                        GlobalUpdateCard(color: .green, topic: "Recovered",
+                                         total: $globalData.recovered,
+                                         today: $globalData.todayRecovered)
+                    }.padding(.bottom, 30)
                     
-                    Text("120642910")
-                        .frame(width: screen.width, alignment: .leading)
-                        .font(Font.system(size: 20, weight: .bold))
-                        .foregroundColor(.white)
-                }.padding(.leading, 45)
-                .padding(.bottom, 10)
+                }
+                .onAppear{
+                    Api().getAllData { (globalData) in
+                        self.globalData = globalData
+                    }
+//                    globalData.deaths = 100
+                }
                 
-                // cards displaying deaths & recoveries
-                HStack(spacing: 15){
-                    GlobalUpdateCard(color: .red, topic: "Deaths", total: 2668606, today: 3399)
-                    GlobalUpdateCard(color: .green, topic: "Recovered", total: 97621762, today: 225213)
-                }.padding(.bottom, 30)
+                
                 
                 // united states info
                 Text("United States")
@@ -64,6 +92,7 @@ struct Home: View {
             
             
         }
+        
     }
 }
 
