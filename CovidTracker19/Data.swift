@@ -1,0 +1,60 @@
+//
+//  Data.swift
+//  CovidTracker19
+//
+//  Created by Alberto Dominguez on 3/17/21.
+//
+
+import SwiftUI
+
+struct GlobalData: Codable, Identifiable {
+    let id = UUID()
+    var active: Int
+    var deaths: Int
+    var todayDeaths: Int
+    var recovered: Int
+    var todayRecovered: Int
+}
+
+
+struct Post: Codable, Identifiable {
+    let id = UUID()
+    var title: String
+    var body: String
+}
+
+class Api {
+    // testing
+    func getPosts(completion: @escaping ([Post]) -> () ) {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {return}
+        
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let posts = try! JSONDecoder().decode([Post].self, from: data!)
+            DispatchQueue.main.async {
+                completion(posts)
+            }
+            print(posts)
+        }
+        .resume()
+    }
+    
+    
+    // get global Data
+    func getAllData(completion: @escaping (GlobalData) -> () ){
+        guard let url = URL(string: "https://corona.lmao.ninja/v3/covid-19/all") else {return}
+
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let data = try! JSONDecoder().decode(GlobalData.self, from: data!)
+            DispatchQueue.main.async {
+                completion(data)
+            }
+            print(data)
+        }
+        .resume()
+
+    }
+    
+    // get state data
+    
+    // get countries Data
+}

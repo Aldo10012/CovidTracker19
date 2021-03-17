@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RedBackground: View {
     var body: some View {
-        VStack(){
+        VStack(spacing: 0){
             Rectangle()
                 .frame(width: screen.width, height: 230)
                 .foregroundColor(.red)

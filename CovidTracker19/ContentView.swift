@@ -15,17 +15,18 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            MapPage()
+            Global()
                 .tabItem{
-                    Image(systemName: "map")
-                    Text("Map")
+                    Image(systemName: "globe")
+                    Text("World Wide")
                 }
             SafeteyPage()
                 .tabItem{
                     Image(systemName: "cross.case")
                     Text("Safetey")
                 }
-        }.accentColor(.red)
+        }
+        .accentColor(.red)
     }
 }
 

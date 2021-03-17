@@ -11,7 +11,9 @@ struct Home: View {
     var body: some View {
         ZStack {
             RedBackground()
+            
             VStack(){
+                // headings at top of page
                 VStack(){
                     Text("Todays News")
                         .frame(width: screen.width, alignment: .leading)
@@ -32,12 +34,13 @@ struct Home: View {
                 }.padding(.leading, 45)
                 .padding(.bottom, 10)
                 
-                
+                // cards displaying deaths & recoveries
                 HStack(spacing: 15){
                     GlobalUpdateCard(color: .red, topic: "Deaths", total: 2668606, today: 3399)
                     GlobalUpdateCard(color: .green, topic: "Recovered", total: 97621762, today: 225213)
                 }.padding(.bottom, 30)
                 
+                // united states info
                 Text("United States")
                     .frame(width: screen.width, alignment: .leading)
                     .padding(.leading, 45)
@@ -50,6 +53,7 @@ struct Home: View {
                         ForEach(0 ..< 50) { item in
                             StateCard(state: "California", active: 3623603, deaths: 55813, recovered: 1902529)
                         }
+                        
                     }.padding(.horizontal, 45)
                     .padding(.bottom, 15)
                 }

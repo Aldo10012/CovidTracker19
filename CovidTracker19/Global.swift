@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MapPage: View {
+struct Global: View {
     var body: some View {
         ZStack {
             Circle()
@@ -22,6 +22,6 @@ struct MapPage: View {
 
 struct MapPage_Previews: PreviewProvider {
     static var previews: some View {
-        MapPage()
+        Global()
     }
 }
