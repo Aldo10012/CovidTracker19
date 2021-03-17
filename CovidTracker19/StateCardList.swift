@@ -8,15 +8,31 @@
 import SwiftUI
 
 struct StateCardList: View {
+    @State var stateData: [StateData] = [StateData(state: "name", active: 0, deaths: 0, recovered: 0)]
+    
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 20) {
-                ForEach(0 ..< 50) { item in
-                    StateCard(state: "California", active: 3623603, deaths: 55813, recovered: 1902529)
-                }
-                
-            }.padding(.horizontal, 45)
-            .padding(.bottom, 15)
+        VStack {
+            //Text("\(stateData.count)")
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 20) {
+                    ForEach(stateData) { state in
+                        StateCard(stateData: StateData(
+                                    state: state.state,
+                                    active: state.active,
+                                    deaths: state.deaths,
+                                    recovered: state.recovered))
+                    }
+                    .onAppear {
+                        Api().getStateData { (stateData) in
+                            print("\n\n\nTEST   t\n\n\n")
+                            self.stateData = stateData
+                        }
+                    }
+                    
+                }.padding(.horizontal, 45)
+                .padding(.bottom, 15)
+            }
         }
     }
 }
