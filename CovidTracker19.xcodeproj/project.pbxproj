@@ -19,6 +19,7 @@
 		63494BEF2601713900A9E58C /* StateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63494BEE2601713900A9E58C /* StateCard.swift */; };
 		63B8168C2602814A0007F675 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168B2602814A0007F675 /* Data.swift */; };
 		63B8168F260284A20007F675 /* TestingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168E260284A20007F675 /* TestingData.swift */; };
+		63B816922602A5CE0007F675 /* StateCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B816912602A5CE0007F675 /* StateCardList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		63494BEE2601713900A9E58C /* StateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCard.swift; sourceTree = "<group>"; };
 		63B8168B2602814A0007F675 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		63B8168E260284A20007F675 /* TestingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingData.swift; sourceTree = "<group>"; };
+		63B816912602A5CE0007F675 /* StateCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCardList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				63494BE82601661400A9E58C /* RedBackground.swift */,
 				63494BEB260168AD00A9E58C /* GlobalUpdateCard.swift */,
 				63494BEE2601713900A9E58C /* StateCard.swift */,
+				63B816912602A5CE0007F675 /* StateCardList.swift */,
 				63B8168B2602814A0007F675 /* Data.swift */,
 				63B8168E260284A20007F675 /* TestingData.swift */,
 			);
@@ -166,6 +169,7 @@
 				63494BE92601661400A9E58C /* RedBackground.swift in Sources */,
 				63494BE52601635600A9E58C /* ContentView.swift in Sources */,
 				63494BEC260168AD00A9E58C /* GlobalUpdateCard.swift in Sources */,
+				63B816922602A5CE0007F675 /* StateCardList.swift in Sources */,
 				63494BDD260162E200A9E58C /* Global.swift in Sources */,
 				63494BEF2601713900A9E58C /* StateCard.swift in Sources */,
 				63B8168F260284A20007F675 /* TestingData.swift in Sources */,

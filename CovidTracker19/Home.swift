@@ -76,15 +76,7 @@ struct Home: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.1921568627, green: 0.1921568627, blue: 0.1921568627, alpha: 1)))
                     .padding(.bottom, 25)
                 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 20) {
-                        ForEach(0 ..< 50) { item in
-                            StateCard(state: "California", active: 3623603, deaths: 55813, recovered: 1902529)
-                        }
-                        
-                    }.padding(.horizontal, 45)
-                    .padding(.bottom, 15)
-                }
+                StateCardList()
                 
                 Spacer()
             }

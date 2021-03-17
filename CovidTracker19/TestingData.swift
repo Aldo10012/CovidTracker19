@@ -14,7 +14,9 @@ struct TestingData: View {
         deaths: 1,
         todayDeaths: 2,
         recovered: 3,
-        todayRecovered: 4)
+        todayRecovered: 4
+    )
+    @State var stateData: [StateData] = []
 
     var body: some View {
 //        List(posts) { post in
@@ -26,19 +28,39 @@ struct TestingData: View {
 //            }
 //        }
         
-        VStack(){
-            Text("Active: \(globalData.active)")
-            Text("deaths: \(globalData.deaths)")
-            Text("deaths today: \(globalData.todayDeaths)")
-            Text("recovered: \(globalData.recovered)")
-            Text("recovered today: \(globalData.todayRecovered)")
+        List(stateData) { state in
+            Text(state.state)
         }
-        .onAppear{
-            
-            Api().getAllData { (globalData) in
-                self.globalData = globalData
+        .onAppear {
+            Api().getStateData { (stateData) in
+                self.stateData = stateData
             }
         }
+        
+        
+        
+//        List(stateData) { state in
+//            Text(state.name)
+//        }.onAppear {
+//            Api.getStateData { (stateData) in
+//                self.stateData = stateData
+//            }
+//        }
+        
+//        VStack(){
+//            Text("GLOBAL").font(Font.system(size: 24, weight: .bold))
+//            Text("Active: \(globalData.active)")
+//            Text("deaths: \(globalData.deaths)")
+//            Text("deaths today: \(globalData.todayDeaths)")
+//            Text("recovered: \(globalData.recovered)")
+//            Text("recovered today: \(globalData.todayRecovered)")
+//        }
+//        .onAppear{
+//            
+//            Api().getAllData { (globalData) in
+//                self.globalData = globalData
+//            }
+//        }
         
 //
     }
