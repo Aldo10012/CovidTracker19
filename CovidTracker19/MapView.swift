@@ -9,52 +9,39 @@ import MapKit
 import SwiftUI
 
 struct MapView: UIViewRepresentable {
+    typealias NSViewType = MKMapView
+    typealias Content = UIViewRepresentableContext<MapView>
     
     @State var country: String
     @State var lat: Double
     @State var long: Double
     @State var active: Int
     
-    typealias Context = UIViewRepresentableContext<Self>
-    
-    class Coordinator: NSObject, MKMapViewDelegate {
-        var parant: MapView
-        
-        init(_ parant: MapView){
-            self.parant = parant
-        }
-        
-        func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-            print(mapView.centerCoordinate)
-        }
+    // 1.
+    func makeUIView(context: Content) -> MKMapView {
+        MKMapView(frame: .zero)
     }
     
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-    
-    func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView()
-        mapView.delegate = context.coordinator
-        
-        let annotation = MKPointAnnotation()
-        annotation.title = self.country
-        annotation.subtitle = "ACTIVE: \(self.active)"
-        annotation.coordinate = CLLocationCoordinate2D(
+    // 2.
+    func updateUIView(_ uiView: MKMapView, context: Content) {
+        // 3.
+        let location = CLLocationCoordinate2D(
             latitude: CLLocationDegrees(self.lat),
             longitude: CLLocationDegrees(self.long))
-        mapView.addAnnotation(annotation)
+        // 4.
+        let span = MKCoordinateSpan(latitudeDelta: 50, longitudeDelta: 50)
+        let region = MKCoordinateRegion(center: location, span: span)
+        uiView.setRegion(region, animated: true)
         
-        return mapView
+        // 5.
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "\(self.country)"
+        annotation.subtitle = "\(self.active)"
+        uiView.addAnnotation(annotation)
     }
-    
-    func updateUIView(_ view: MKMapView, context: Context) {
-    }
-    
-
-    
-    
 }
+
 
 struct MapView2_Previews: PreviewProvider {
     static var previews: some View {

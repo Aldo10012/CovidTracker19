@@ -11,7 +11,7 @@ import SwiftUI
 struct CovidTracker19App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Global()
         }
     }
 }

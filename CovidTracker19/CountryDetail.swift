@@ -24,10 +24,11 @@ struct CountryDetail: View {
         VStack(alignment: .leading){
             
             // this is where the map will go
-            MapView(country: self.country,
-                     lat: self.lat,  // N/S
-                     long: self.long,
-                     active: self.active) // E/W
+            MapView( country: self.country,
+                     lat: self.lat,   // N/S
+                     long: self.long, // E/W
+                     active: self.active
+            )
                 .frame(width: screen.width-40, height: cardGroupHeight)
                 .foregroundColor(Color(#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)))
                 .padding(.horizontal, 20)
