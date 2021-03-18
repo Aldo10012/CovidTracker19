@@ -22,15 +22,6 @@ struct CountryDetail: View {
 
         
         VStack(alignment: .leading){
-//            Text("\(self.country)").font(Font.system(size: 20, weight: .bold))
-//            Text("Total Cases: \(self.cases)")
-//            Text("Active: \(self.active)")
-//            Text("Total Deaths: \(self.deaths)")
-//            Text("Deaths Today: \(self.todayDeaths)")
-//            Text("Total Recovered: \(self.recovered)")
-//            Text("Recovered Today: \(self.todayRecovered)")
-//            Text("Latitude: \(self.lat)")
-//            Text("Longitude: \(self.long)")
             
             // this is where the map will go
             MapView(country: self.country,
@@ -43,16 +34,6 @@ struct CountryDetail: View {
             
             
             VStack(spacing: 10){
-//                Rectangle()
-//                    .frame(width: screen.width-40, height: cardHeigh)
-//                    .foregroundColor(Color(#colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)))
-//
-//                    .background(Color.white)
-//                    .cornerRadius(15)
-//                    .shadow(color: Color(.black).opacity(0.15), radius: 8, x: 4, y: 8)
-//                    .background(Color.white)
-//                    .cornerRadius(15)
-//                    .shadow(color: Color(.black).opacity(0.15), radius: 8, x: 4, y: 8)
                 
                 CountryCard(bgColog: .orange,
                             topic1: "Total Cases", topic1Info: self.cases,

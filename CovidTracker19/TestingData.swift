@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TestingData: View {
-    @State var posts: [Post] = [ ]
     @State var globalData: GlobalData = GlobalData(
         active: 0,
         deaths: 1,
@@ -20,14 +19,7 @@ struct TestingData: View {
     @State var countryData: [CountriesData] = []
 
     var body: some View {
-//        List(posts) { post in
-//            Text(post.title)
-//        }
-//        .onAppear {
-//            Api().getPosts { (posts) in
-//                self.posts = posts
-//            }
-//        }
+
         //====================//
         // TESTING STATE DATA //
         //====================//
