@@ -12,7 +12,7 @@ struct StateCardList: View {
     
     var body: some View {
         VStack {
-            //Text("\(stateData.count)")
+            Text("\(stateData.count)")
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
@@ -23,15 +23,15 @@ struct StateCardList: View {
                                     deaths: state.deaths,
                                     recovered: state.recovered))
                     }
-                    .onAppear {
-                        Api().getStateData { (stateData) in
-                            print("\n\n\nTEST   t\n\n\n")
-                            self.stateData = stateData
-                        }
-                    }
+                    
                     
                 }.padding(.horizontal, 45)
                 .padding(.bottom, 15)
+            }
+        }.onAppear {
+            Api().getStateData { (stateData) in
+                print("\n\n\nTEST   t\n\n\n")
+                self.stateData = stateData
             }
         }
     }

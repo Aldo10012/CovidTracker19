@@ -35,7 +35,7 @@ struct TestingData: View {
             Api().getStateData { (stateData) in
                 self.stateData = stateData
             }
-        }
+        }.frame(width: screen.width, height: screen.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         
         
         
