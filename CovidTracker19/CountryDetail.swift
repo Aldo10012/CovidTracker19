@@ -19,29 +19,55 @@ struct CountryDetail: View {
     @State var active: Int
     
     var body: some View {
-//        ZStack {
-//            Circle()
-//                .frame(width: 100, height: 100)
-//                .foregroundColor(.purple)
-//            Text("4")
-//                .font(.system(size: 70, weight: .bold))
-//                .foregroundColor(.white)
-//        }
+
         
         VStack(alignment: .leading){
-            Text("\(self.country)").font(Font.system(size: 20, weight: .bold))
+//            Text("\(self.country)").font(Font.system(size: 20, weight: .bold))
+//            Text("Total Cases: \(self.cases)")
+//            Text("Active: \(self.active)")
+//            Text("Total Deaths: \(self.deaths)")
+//            Text("Deaths Today: \(self.todayDeaths)")
+//            Text("Total Recovered: \(self.recovered)")
+//            Text("Recovered Today: \(self.todayRecovered)")
+//            Text("Latitude: \(self.lat)")
+//            Text("Longitude: \(self.long)")
             
-                Text("Total Cases: \(self.cases)")
-                Text("Active: \(self.active)")
-                Text("Total Deaths: \(self.deaths)")
-                Text("Deaths Today: \(self.todayDeaths)")
-                Text("Total Recovered: \(self.recovered)")
-                Text("Recovered Today: \(self.todayRecovered)")
-                Text("Latitude: \(self.lat)")
-                Text("Longitude: \(self.long)")
+            // this is where the map will go
+            Rectangle()
+                .frame(width: screen.width-40, height: cardGroupHeight)
+                .foregroundColor(Color(#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)))
+                .padding(.horizontal, 20)
+            
+            
+            VStack(spacing: 10){
+//                Rectangle()
+//                    .frame(width: screen.width-40, height: cardHeigh)
+//                    .foregroundColor(Color(#colorLiteral(red: 0.5058823824, green: 0.3372549117, blue: 0.06666667014, alpha: 1)))
+//
+//                    .background(Color.white)
+//                    .cornerRadius(15)
+//                    .shadow(color: Color(.black).opacity(0.15), radius: 8, x: 4, y: 8)
+//                    .background(Color.white)
+//                    .cornerRadius(15)
+//                    .shadow(color: Color(.black).opacity(0.15), radius: 8, x: 4, y: 8)
+                
+                CountryCard(bgColog: .orange,
+                            topic1: "Total Cases", topic1Info: self.cases,
+                            topic2: "Active", topic2Info: self.active)
+                CountryCard(bgColog: .red,
+                            topic1: "Total Deaths", topic1Info: self.deaths,
+                            topic2: "Today", topic2Info: self.todayDeaths)
+                CountryCard(bgColog: .green,
+                            topic1: "Total Recovered", topic1Info: self.recovered,
+                            topic2: "Today", topic2Info: self.todayRecovered)
+                
+                
+
+            }.padding(.horizontal, 20)
             
             
         }.padding(.vertical, 10)
+        .offset(y: -25)
     }
 }
 
@@ -57,5 +83,41 @@ struct CountryDetail_Previews: PreviewProvider {
             todayRecovered: 22448224,
             cases: 30301478,
             active: 7302493)
+    }
+}
+
+var cardGroupHeight = screen.height*0.35
+var cardHeigh = (cardGroupHeight-20) / 3
+
+struct CountryCard: View {
+    @State var bgColog: Color
+    @State var topic1: String
+    @State var topic1Info: Int
+    @State var topic2: String
+    @State var topic2Info: Int
+    
+    var body: some View {
+        VStack(spacing: 10){
+            HStack(){
+                Text(self.topic1)
+                Spacer()
+                Text(self.topic2)
+            }.padding(.horizontal, 10)
+            .foregroundColor(Color(#colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)))
+            .font(Font.system(size: 17, weight: .medium))
+            
+            HStack(){
+                Text("\(self.topic1Info)")
+                Spacer()
+                Text("\(self.topic2Info)")
+            }.padding(.horizontal, 10)
+            .foregroundColor(self.bgColog)
+            .font(Font.system(size: 25, weight: .bold))
+            
+            
+        }.frame(width: screen.width-40, height: cardHeigh)
+        .background(Color.white)
+        .cornerRadius(15)
+        .shadow(color: Color(.black).opacity(0.15), radius: 8, x: 4, y: 8)
     }
 }
