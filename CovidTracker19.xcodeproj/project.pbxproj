@@ -17,6 +17,7 @@
 		63494BE92601661400A9E58C /* RedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63494BE82601661400A9E58C /* RedBackground.swift */; };
 		63494BEC260168AD00A9E58C /* GlobalUpdateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63494BEB260168AD00A9E58C /* GlobalUpdateCard.swift */; };
 		63494BEF2601713900A9E58C /* StateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63494BEE2601713900A9E58C /* StateCard.swift */; };
+		636726792603C502000D5A1B /* CountryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636726782603C502000D5A1B /* CountryDetail.swift */; };
 		63B8168C2602814A0007F675 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168B2602814A0007F675 /* Data.swift */; };
 		63B8168F260284A20007F675 /* TestingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168E260284A20007F675 /* TestingData.swift */; };
 		63B816922602A5CE0007F675 /* StateCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B816912602A5CE0007F675 /* StateCardList.swift */; };
@@ -35,6 +36,7 @@
 		63494BE82601661400A9E58C /* RedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBackground.swift; sourceTree = "<group>"; };
 		63494BEB260168AD00A9E58C /* GlobalUpdateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalUpdateCard.swift; sourceTree = "<group>"; };
 		63494BEE2601713900A9E58C /* StateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCard.swift; sourceTree = "<group>"; };
+		636726782603C502000D5A1B /* CountryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetail.swift; sourceTree = "<group>"; };
 		63B8168B2602814A0007F675 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		63B8168E260284A20007F675 /* TestingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingData.swift; sourceTree = "<group>"; };
 		63B816912602A5CE0007F675 /* StateCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCardList.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				63494BE42601635600A9E58C /* ContentView.swift */,
 				63494BCE2601628200A9E58C /* Home.swift */,
 				63494BDC260162E200A9E58C /* Global.swift */,
+				636726782603C502000D5A1B /* CountryDetail.swift */,
 				63494BE02601631A00A9E58C /* SafeteyPage.swift */,
 				63494BD02601628300A9E58C /* Assets.xcassets */,
 				63494BD52601628300A9E58C /* Info.plist */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63494BCF2601628200A9E58C /* Home.swift in Sources */,
+				636726792603C502000D5A1B /* CountryDetail.swift in Sources */,
 				63494BE92601661400A9E58C /* RedBackground.swift in Sources */,
 				63494BE52601635600A9E58C /* ContentView.swift in Sources */,
 				63494BEC260168AD00A9E58C /* GlobalUpdateCard.swift in Sources */,

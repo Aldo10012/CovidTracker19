@@ -12,7 +12,7 @@ struct StateCardList: View {
     
     var body: some View {
         VStack {
-            Text("\(stateData.count)")
+            //Text("\(stateData.count)")
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {

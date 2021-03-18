@@ -74,17 +74,17 @@ struct TestingData: View {
             VStack(alignment: .leading){
                 Text(country.country).font(Font.system(size: 20, weight: .bold))
                 
-                Text("Total Cases: \(country.cases)")
-                Text("Active: \(country.active)")
-                Text("Total Deaths: \(country.deaths)")
-                Text("Deaths Today: \(country.todayDeaths)")
-                Text("Total Recovered: \(country.recovered)")
-                Text("Recovered Today: \(country.todayRecovered)")
-                Text("Latitude: \(country.countryInfo.lat)")
-                Text("Longitude: \(country.countryInfo.long)")
+//                Text("Total Cases: \(country.cases)")
+//                Text("Active: \(country.active)")
+//                Text("Total Deaths: \(country.deaths)")
+//                Text("Deaths Today: \(country.todayDeaths)")
+//                Text("Total Recovered: \(country.recovered)")
+//                Text("Recovered Today: \(country.todayRecovered)")
+//                Text("Latitude: \(country.countryInfo.lat)")
+//                Text("Longitude: \(country.countryInfo.long)")
                 
                 
-            }.padding(.bottom, 10)
+            }.padding(.vertical, 10)
         }
         .onAppear {
             Api().getCountryData { (countryData) in
