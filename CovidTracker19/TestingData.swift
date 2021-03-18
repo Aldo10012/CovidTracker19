@@ -34,6 +34,11 @@ struct TestingData: View {
         .onAppear {
             Api().getStateData { (stateData) in
                 self.stateData = stateData
+                for i in 0..<12{
+                    self.stateData.popLast()
+                }
+                self.stateData.remove(at: self.stateData.count-3)
+                print("hello")
             }
         }.frame(width: screen.width, height: screen.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         

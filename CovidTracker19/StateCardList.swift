@@ -32,6 +32,11 @@ struct StateCardList: View {
             Api().getStateData { (stateData) in
                 print("\n\n\nTEST   t\n\n\n")
                 self.stateData = stateData
+                // removing US territories from data
+                for i in 0..<12{
+                    self.stateData.popLast()
+                }
+                self.stateData.remove(at: self.stateData.count-3)
             }
         }
     }
