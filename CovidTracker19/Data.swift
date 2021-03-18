@@ -24,6 +24,24 @@ struct StateData: Codable, Identifiable {
     var recovered: Int
 }
 
+struct CountriesData: Codable, Identifiable {
+    let id = UUID()
+    var country: String
+    var countryInfo: CountryInfo
+    var deaths: Int
+    var todayDeaths: Int
+    var recovered: Int
+    var todayRecovered: Int
+    var cases: Int
+    var active: Int
+}
+
+struct CountryInfo: Codable, Identifiable {
+    let id = UUID()
+    var lat: Double
+    var long: Double
+}
+
 
 struct Post: Codable, Identifiable {
     let id = UUID()
@@ -78,4 +96,17 @@ class Api {
     }
     
     // get countries Data
+    func getCountryData(completion: @escaping ([CountriesData]) -> () ){
+        guard let url = URL(string: "https://corona.lmao.ninja/v3/covid-19/countries") else {return}
+
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            let data = try! JSONDecoder().decode([CountriesData].self, from: data!)
+            DispatchQueue.main.async {
+                completion(data)
+            }
+            print(data)
+        }
+        .resume()
+
+    }
 }

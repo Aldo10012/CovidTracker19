@@ -17,6 +17,7 @@ struct TestingData: View {
         todayRecovered: 4
     )
     @State var stateData: [StateData] = []
+    @State var countryData: [CountriesData] = []
 
     var body: some View {
 //        List(posts) { post in
@@ -27,31 +28,29 @@ struct TestingData: View {
 //                self.posts = posts
 //            }
 //        }
-        
-        List(stateData) { state in
-            Text(state.state)
-        }
-        .onAppear {
-            Api().getStateData { (stateData) in
-                self.stateData = stateData
-                for i in 0..<12{
-                    self.stateData.popLast()
-                }
-                self.stateData.remove(at: self.stateData.count-3)
-                print("hello")
-            }
-        }.frame(width: screen.width, height: screen.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        
-        
-        
+        //====================//
+        // TESTING STATE DATA //
+        //====================//
 //        List(stateData) { state in
-//            Text(state.name)
-//        }.onAppear {
-//            Api.getStateData { (stateData) in
-//                self.stateData = stateData
-//            }
+//            Text(state.state)
 //        }
+//        .onAppear {
+//            Api().getStateData { (stateData) in
+//                self.stateData = stateData
+//                for i in 0..<12{
+//                    self.stateData.popLast()
+//                }
+//                self.stateData.remove(at: self.stateData.count-3)
+//                //self.stateData.sorted { $0.state < $1.state }
+//
+//            }
+//        }.frame(width: screen.width, height: screen.height)
         
+        
+        
+        //=====================//
+        // TESTING GLOBAL DATA //
+        //=====================//
 //        VStack(){
 //            Text("GLOBAL").font(Font.system(size: 24, weight: .bold))
 //            Text("Active: \(globalData.active)")
@@ -61,13 +60,37 @@ struct TestingData: View {
 //            Text("recovered today: \(globalData.todayRecovered)")
 //        }
 //        .onAppear{
-//            
+//
 //            Api().getAllData { (globalData) in
 //                self.globalData = globalData
 //            }
 //        }
         
-//
+        
+        //======================//
+        // TESTING COUNTRY DATA //
+        //======================//
+        List(countryData) { country in
+            VStack(alignment: .leading){
+                Text(country.country).font(Font.system(size: 20, weight: .bold))
+                
+                Text("Total Cases: \(country.cases)")
+                Text("Active: \(country.active)")
+                Text("Total Deaths: \(country.deaths)")
+                Text("Deaths Today: \(country.todayDeaths)")
+                Text("Total Recovered: \(country.recovered)")
+                Text("Recovered Today: \(country.todayRecovered)")
+                Text("Latitude: \(country.countryInfo.lat)")
+                Text("Longitude: \(country.countryInfo.long)")
+                
+                
+            }.padding(.bottom, 10)
+        }
+        .onAppear {
+            Api().getCountryData { (countryData) in
+                self.countryData = countryData
+            }
+        }.frame(width: screen.width, height: screen.height)
     }
 }
 

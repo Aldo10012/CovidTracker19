@@ -12,7 +12,7 @@ struct StateCardList: View {
     
     var body: some View {
         VStack {
-            //Text("\(stateData.count)")
+            Text("\(stateData.count)")
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
@@ -37,6 +37,7 @@ struct StateCardList: View {
                     self.stateData.popLast()
                 }
                 self.stateData.remove(at: self.stateData.count-3)
+                self.stateData.sorted { $0.state < $1.state }
             }
         }
     }
