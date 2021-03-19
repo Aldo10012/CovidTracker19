@@ -52,7 +52,7 @@ struct CountryDetail: View {
             
             
         }.padding(.vertical, 10)
-        .offset(y: -25)
+        .offset(y: 0)
     }
 }
 

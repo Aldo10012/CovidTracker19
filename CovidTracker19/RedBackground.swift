@@ -20,7 +20,7 @@ struct RedBackground: View {
             VStack(spacing: 0){
                 Rectangle()
                     .frame(width: screen.width, height: redHeight)
-                    .foregroundColor(.red)
+                    .foregroundColor(Color(UIColor(.appRed)))
                     .padding(.bottom, 0)
 
                 Spacer()

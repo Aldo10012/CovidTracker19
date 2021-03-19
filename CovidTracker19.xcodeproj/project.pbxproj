@@ -19,6 +19,7 @@
 		63494BEF2601713900A9E58C /* StateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63494BEE2601713900A9E58C /* StateCard.swift */; };
 		636726792603C502000D5A1B /* CountryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636726782603C502000D5A1B /* CountryDetail.swift */; };
 		636726812603F6B8000D5A1B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636726802603F6B8000D5A1B /* MapView.swift */; };
+		63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EECB26051025000ABE92 /* NavigationBarColor.swift */; };
 		63B8168C2602814A0007F675 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168B2602814A0007F675 /* Data.swift */; };
 		63B8168F260284A20007F675 /* TestingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168E260284A20007F675 /* TestingData.swift */; };
 		63B816922602A5CE0007F675 /* StateCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B816912602A5CE0007F675 /* StateCardList.swift */; };
@@ -39,6 +40,7 @@
 		63494BEE2601713900A9E58C /* StateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCard.swift; sourceTree = "<group>"; };
 		636726782603C502000D5A1B /* CountryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetail.swift; sourceTree = "<group>"; };
 		636726802603F6B8000D5A1B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		63B7EECB26051025000ABE92 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
 		63B8168B2602814A0007F675 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		63B8168E260284A20007F675 /* TestingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingData.swift; sourceTree = "<group>"; };
 		63B816912602A5CE0007F675 /* StateCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCardList.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				63B816912602A5CE0007F675 /* StateCardList.swift */,
 				63B8168B2602814A0007F675 /* Data.swift */,
 				63B8168E260284A20007F675 /* TestingData.swift */,
+				63B7EECB26051025000ABE92 /* NavigationBarColor.swift */,
 			);
 			path = CovidTracker19;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				63B816922602A5CE0007F675 /* StateCardList.swift in Sources */,
 				63494BDD260162E200A9E58C /* Global.swift in Sources */,
 				63494BEF2601713900A9E58C /* StateCard.swift in Sources */,
+				63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */,
 				63B8168F260284A20007F675 /* TestingData.swift in Sources */,
 				63494BE12601631A00A9E58C /* SafeteyPage.swift in Sources */,
 				63B8168C2602814A0007F675 /* Data.swift in Sources */,

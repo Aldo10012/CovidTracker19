@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct StateCardList: View {
-    @State var stateData: [StateData] = [StateData(state: "name", active: 0, deaths: 0, recovered: 0)]
+    @State var stateData: [StateData] = [
+        StateData(state: "California", active: 0, deaths: 0, recovered: 0),
+        StateData(state: "Texas", active: 0, deaths: 0, recovered: 0)
+    ]
     
     var body: some View {
         VStack {

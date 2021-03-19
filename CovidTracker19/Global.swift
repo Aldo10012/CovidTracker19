@@ -40,7 +40,7 @@ struct Global: View {
             .navigationBarTitle(Text("Countries"))
             
             
-        }
+        }.navigationBarColor(backgroundColor: UIColor(.appRed), tintColor: .white)
         
     }
 }
@@ -50,3 +50,8 @@ struct MapPage_Previews: PreviewProvider {
         Global()
     }
 }
+
+extension Color {
+    public static let appRed: Color = Color(#colorLiteral(red: 0.9333333333, green: 0.262745098, blue: 0.262745098, alpha: 1))
+}
+
