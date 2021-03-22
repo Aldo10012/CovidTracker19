@@ -24,20 +24,9 @@ struct SafeteyPage: View {
     
     var body: some View {
         ZStack {
-            RedBackground()
+            Background()
             
-            VStack {
-                HStack(spacing: 20) {
-                    Image("doctor-woman")
-                        .resizable()
-                        .frame(width: drImgHeight/2.5, height: drImgHeight)
-                    
-                    Text("Get to Know Covid-19")
-                        .font(.system(size: 22, weight: .medium))
-                        .foregroundColor(.white)
-                }.padding(.horizontal, 30)
-                
-                
+            NavigationView {
                 ScrollView{
                     Header(text: "Symptoms")
                         .padding(.top, 50)
@@ -61,9 +50,9 @@ struct SafeteyPage: View {
                         PreventionCardView(img: method.img, method: method.method, info: method.info)
                     }
                     
-                }
+                }.navigationBarTitle("Get to know Covid-19")
+                .navigationBarColor(backgroundColor: UIColor(.appRed), tintColor: .white)
                 
-                Spacer()
             }
         }
         
