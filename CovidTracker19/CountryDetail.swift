@@ -53,6 +53,14 @@ struct CountryDetail: View {
             
         }.padding(.vertical, 10)
         .offset(y: 0)
+        .toolbar { // <2>
+            ToolbarItem(placement: .principal) { // <3>
+                Text(self.country)
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .offset(y: 0)
+            }
+        }
     }
 }
 

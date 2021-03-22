@@ -12,10 +12,7 @@ struct RedBackground: View {
         let redHeight: CGFloat = 230
         
         ZStack {
-            Rectangle()
-                .frame(width: screen.width, height: .infinity)
-                .foregroundColor(Color(#colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9490196078, alpha: 1)))
-                .ignoresSafeArea()
+            Background()
             
             VStack(spacing: 0){
                 Rectangle()

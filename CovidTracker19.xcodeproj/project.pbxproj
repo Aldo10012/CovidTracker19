@@ -20,6 +20,8 @@
 		636726792603C502000D5A1B /* CountryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636726782603C502000D5A1B /* CountryDetail.swift */; };
 		636726812603F6B8000D5A1B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636726802603F6B8000D5A1B /* MapView.swift */; };
 		63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EECB26051025000ABE92 /* NavigationBarColor.swift */; };
+		63B7EECF2605267B000ABE92 /* Color + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EECE2605267B000ABE92 /* Color + ext.swift */; };
+		63B7EED2260526A9000ABE92 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EED1260526A9000ABE92 /* Background.swift */; };
 		63B8168C2602814A0007F675 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168B2602814A0007F675 /* Data.swift */; };
 		63B8168F260284A20007F675 /* TestingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168E260284A20007F675 /* TestingData.swift */; };
 		63B816922602A5CE0007F675 /* StateCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B816912602A5CE0007F675 /* StateCardList.swift */; };
@@ -41,6 +43,8 @@
 		636726782603C502000D5A1B /* CountryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetail.swift; sourceTree = "<group>"; };
 		636726802603F6B8000D5A1B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		63B7EECB26051025000ABE92 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
+		63B7EECE2605267B000ABE92 /* Color + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + ext.swift"; sourceTree = "<group>"; };
+		63B7EED1260526A9000ABE92 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		63B8168B2602814A0007F675 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		63B8168E260284A20007F675 /* TestingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingData.swift; sourceTree = "<group>"; };
 		63B816912602A5CE0007F675 /* StateCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCardList.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				63494BD02601628300A9E58C /* Assets.xcassets */,
 				63494BD52601628300A9E58C /* Info.plist */,
 				63494BD22601628300A9E58C /* Preview Content */,
+				63B7EED1260526A9000ABE92 /* Background.swift */,
 				63494BE82601661400A9E58C /* RedBackground.swift */,
 				63494BEB260168AD00A9E58C /* GlobalUpdateCard.swift */,
 				63494BEE2601713900A9E58C /* StateCard.swift */,
@@ -93,6 +98,7 @@
 				63B8168B2602814A0007F675 /* Data.swift */,
 				63B8168E260284A20007F675 /* TestingData.swift */,
 				63B7EECB26051025000ABE92 /* NavigationBarColor.swift */,
+				63B7EECE2605267B000ABE92 /* Color + ext.swift */,
 			);
 			path = CovidTracker19;
 			sourceTree = "<group>";
@@ -178,12 +184,14 @@
 				636726792603C502000D5A1B /* CountryDetail.swift in Sources */,
 				63494BE92601661400A9E58C /* RedBackground.swift in Sources */,
 				63494BE52601635600A9E58C /* ContentView.swift in Sources */,
+				63B7EECF2605267B000ABE92 /* Color + ext.swift in Sources */,
 				636726812603F6B8000D5A1B /* MapView.swift in Sources */,
 				63494BEC260168AD00A9E58C /* GlobalUpdateCard.swift in Sources */,
 				63B816922602A5CE0007F675 /* StateCardList.swift in Sources */,
 				63494BDD260162E200A9E58C /* Global.swift in Sources */,
 				63494BEF2601713900A9E58C /* StateCard.swift in Sources */,
 				63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */,
+				63B7EED2260526A9000ABE92 /* Background.swift in Sources */,
 				63B8168F260284A20007F675 /* TestingData.swift in Sources */,
 				63494BE12601631A00A9E58C /* SafeteyPage.swift in Sources */,
 				63B8168C2602814A0007F675 /* Data.swift in Sources */,
