@@ -22,6 +22,7 @@
 		63821B8526094A6B00381B2C /* SymptomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63821B8426094A6B00381B2C /* SymptomCardView.swift */; };
 		63821B8826094AC500381B2C /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63821B8726094AC500381B2C /* Header.swift */; };
 		63821B8B26094AEE00381B2C /* PreventionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63821B8A26094AEE00381B2C /* PreventionCardView.swift */; };
+		63821B8F26094F4D00381B2C /* SafetyLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63821B8E26094F4D00381B2C /* SafetyLists.swift */; };
 		63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EECB26051025000ABE92 /* NavigationBarColor.swift */; };
 		63B7EECF2605267B000ABE92 /* Color + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EECE2605267B000ABE92 /* Color + ext.swift */; };
 		63B7EED2260526A9000ABE92 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EED1260526A9000ABE92 /* Background.swift */; };
@@ -48,6 +49,7 @@
 		63821B8426094A6B00381B2C /* SymptomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomCardView.swift; sourceTree = "<group>"; };
 		63821B8726094AC500381B2C /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		63821B8A26094AEE00381B2C /* PreventionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventionCardView.swift; sourceTree = "<group>"; };
+		63821B8E26094F4D00381B2C /* SafetyLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyLists.swift; sourceTree = "<group>"; };
 		63B7EECB26051025000ABE92 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
 		63B7EECE2605267B000ABE92 /* Color + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + ext.swift"; sourceTree = "<group>"; };
 		63B7EED1260526A9000ABE92 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
@@ -105,9 +107,10 @@
 				63B8168E260284A20007F675 /* TestingData.swift */,
 				63B7EECB26051025000ABE92 /* NavigationBarColor.swift */,
 				63B7EECE2605267B000ABE92 /* Color + ext.swift */,
-				63821B8426094A6B00381B2C /* SymptomCardView.swift */,
 				63821B8726094AC500381B2C /* Header.swift */,
+				63821B8426094A6B00381B2C /* SymptomCardView.swift */,
 				63821B8A26094AEE00381B2C /* PreventionCardView.swift */,
+				63821B8E26094F4D00381B2C /* SafetyLists.swift */,
 			);
 			path = CovidTracker19;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				63B816922602A5CE0007F675 /* StateCardList.swift in Sources */,
 				63494BDD260162E200A9E58C /* Global.swift in Sources */,
 				63494BEF2601713900A9E58C /* StateCard.swift in Sources */,
+				63821B8F26094F4D00381B2C /* SafetyLists.swift in Sources */,
 				63821B8826094AC500381B2C /* Header.swift in Sources */,
 				63821B8526094A6B00381B2C /* SymptomCardView.swift in Sources */,
 				63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */,

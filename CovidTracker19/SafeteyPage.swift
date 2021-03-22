@@ -8,18 +8,9 @@
 import SwiftUI
 
 struct SafeteyPage: View {
-    var symptomList: [Symptom] = [
-        Symptom(name: "Headache"),
-        Symptom(name: "Cough"),
-        Symptom(name: "Fever"),
-        Symptom(name: "Sore Throat")
-    ]
-    var preventionList: [Prevention] = [
-        Prevention(img: "Wear A Mask", method: "Wear s mask", info: "some information will go here about how to preventthe spread and how it works"),
-        Prevention(img: "Wash Your Hands", method: "Wash your hands", info: "some information will go here about how to preventthe spread and how it works"),
-        Prevention(img: "Hand Sanitizer", method: "Use hand sanitizer", info: "some information will go here about how to preventthe spread and how it works"),
-        Prevention(img: "Social Distance", method: "Social distancing", info: "some information will go here about how to preventthe spread and how it works")
-    ]
+    var symptomList: [Symptom] = SafetyLists().symptomList
+    var preventionList: [Prevention] = SafetyLists().preventionList
+    var ifSickList: [Prevention] = SafetyLists().ifSickList
     
     var body: some View {
         ZStack {
@@ -46,6 +37,15 @@ struct SafeteyPage: View {
                         .padding(.bottom, 25)
                     
                     ForEach(preventionList) { method in
+                        PreventionCardView(img: method.img, method: method.method, info: method.info)
+                    }
+                    
+                    Header(text: "If You're Sick")
+                        .padding(.leading, 30)
+                        .padding(.bottom, 25)
+                        .padding(.top, 50)
+                    
+                    ForEach(ifSickList) { method in
                         PreventionCardView(img: method.img, method: method.method, info: method.info)
                     }
                     
