@@ -68,12 +68,9 @@ struct Home: View {
                 
                 
                 
-                // united states info
-                Text("United States")
-                    .frame(width: screen.width, alignment: .leading)
+                // united states info                
+                Header(text: "United States")
                     .padding(.leading, 45)
-                    .font(Font.system(size: 24, weight: .medium))
-                    .foregroundColor(Color(#colorLiteral(red: 0.1921568627, green: 0.1921568627, blue: 0.1921568627, alpha: 1)))
                     .padding(.bottom, 25)
                 
                 StateCardList()
