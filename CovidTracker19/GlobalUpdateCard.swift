@@ -19,7 +19,7 @@ struct GlobalUpdateCard: View {
                 Text("Total \(topic)")
                     .foregroundColor(Color(#colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)))
                 Text("\(total)")
-                    .font(Font.system(size: 23, weight: .bold))
+                    .font(Font.system(size: 20, weight: .bold))
                     .foregroundColor(self.color)
             }.padding(.leading, 15)
             
@@ -27,7 +27,7 @@ struct GlobalUpdateCard: View {
                 Text("Today")
                     .foregroundColor(Color(#colorLiteral(red: 0.4509803922, green: 0.4509803922, blue: 0.4509803922, alpha: 1)))
                 Text("\(today)")
-                    .font(Font.system(size: 23, weight: .bold))
+                    .font(Font.system(size: 20, weight: .bold))
                     .foregroundColor(self.color)
             }.padding(.leading, 15)
         }
