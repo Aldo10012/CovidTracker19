@@ -49,7 +49,8 @@ class Api {
     
     // get global Data
     func getAllData(completion: @escaping (GlobalData) -> () ){
-        guard let url = URL(string: "https://corona.lmao.ninja/v3/covid-19/all") else {return}
+        
+        guard let url = URL(string: "https://disease.sh/v3/covid-19/all") else {return}
 
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let data = try! JSONDecoder().decode(GlobalData.self, from: data!)
@@ -64,7 +65,7 @@ class Api {
     
     // get state data
     func getStateData(completion: @escaping ([StateData]) -> () ){
-        guard let url = URL(string: "https://corona.lmao.ninja/v3/covid-19/states") else {return}
+        guard let url = URL(string: "https://disease.sh/v3/covid-19/states") else {return}
 
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let data = try! JSONDecoder().decode([StateData].self, from: data!)
@@ -79,7 +80,7 @@ class Api {
     
     // get countries Data
     func getCountryData(completion: @escaping ([CountriesData]) -> () ){
-        guard let url = URL(string: "https://corona.lmao.ninja/v3/covid-19/countries") else {return}
+        guard let url = URL(string: "https://disease.sh/v3/covid-19/countries") else {return}
 
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let data = try! JSONDecoder().decode([CountriesData].self, from: data!)
