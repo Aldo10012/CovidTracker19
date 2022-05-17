@@ -45,3 +45,11 @@ No additional installations required, simply print this command onto your termin
 In order to make successful API call, you must first signup to [Corona.lmao.ninja](https://corona.lmao.ninja/docs/#/).
 
 ### Screeneshots
+
+<img src="images-recordings/home.png" width=20%> <img src="images-recordings/world-wide.png" width=20%> <img src="images-recordings/map.png" width=20%> <img src="images-recordings/safety.png" width=20%>
+
+
+
+
+
+
