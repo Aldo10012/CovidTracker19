@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6328D78428388F9400DC6B8E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328D78328388F9400DC6B8E /* API.swift */; };
+		6328D7862838900600DC6B8E /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328D7852838900600DC6B8E /* StateData.swift */; };
+		6328D7882838901700DC6B8E /* CountriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328D7872838901700DC6B8E /* CountriesData.swift */; };
+		6328D78A2838902700DC6B8E /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328D7892838902700DC6B8E /* CountryInfo.swift */; };
+		6328D78C2838903400DC6B8E /* Symptom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328D78B2838903400DC6B8E /* Symptom.swift */; };
+		6328D78E2838904200DC6B8E /* Prevention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6328D78D2838904200DC6B8E /* Prevention.swift */; };
 		63494BCD2601628200A9E58C /* CovidTracker19App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63494BCC2601628200A9E58C /* CovidTracker19App.swift */; };
 		63494BCF2601628200A9E58C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63494BCE2601628200A9E58C /* Home.swift */; };
 		63494BD12601628300A9E58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63494BD02601628300A9E58C /* Assets.xcassets */; };
@@ -26,12 +32,18 @@
 		63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EECB26051025000ABE92 /* NavigationBarColor.swift */; };
 		63B7EECF2605267B000ABE92 /* Color + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EECE2605267B000ABE92 /* Color + ext.swift */; };
 		63B7EED2260526A9000ABE92 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B7EED1260526A9000ABE92 /* Background.swift */; };
-		63B8168C2602814A0007F675 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168B2602814A0007F675 /* Data.swift */; };
+		63B8168C2602814A0007F675 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168B2602814A0007F675 /* GlobalData.swift */; };
 		63B8168F260284A20007F675 /* TestingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8168E260284A20007F675 /* TestingData.swift */; };
 		63B816922602A5CE0007F675 /* StateCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B816912602A5CE0007F675 /* StateCardList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6328D78328388F9400DC6B8E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6328D7852838900600DC6B8E /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
+		6328D7872838901700DC6B8E /* CountriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesData.swift; sourceTree = "<group>"; };
+		6328D7892838902700DC6B8E /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
+		6328D78B2838903400DC6B8E /* Symptom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
+		6328D78D2838904200DC6B8E /* Prevention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevention.swift; sourceTree = "<group>"; };
 		63494BC92601628200A9E58C /* CovidTracker19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidTracker19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63494BCC2601628200A9E58C /* CovidTracker19App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidTracker19App.swift; sourceTree = "<group>"; };
 		63494BCE2601628200A9E58C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -53,7 +65,7 @@
 		63B7EECB26051025000ABE92 /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
 		63B7EECE2605267B000ABE92 /* Color + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + ext.swift"; sourceTree = "<group>"; };
 		63B7EED1260526A9000ABE92 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		63B8168B2602814A0007F675 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		63B8168B2602814A0007F675 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		63B8168E260284A20007F675 /* TestingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingData.swift; sourceTree = "<group>"; };
 		63B816912602A5CE0007F675 /* StateCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCardList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +81,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6328D78128388F3600DC6B8E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6328D78328388F9400DC6B8E /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6328D78228388F7D00DC6B8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63B8168B2602814A0007F675 /* GlobalData.swift */,
+				6328D7852838900600DC6B8E /* StateData.swift */,
+				6328D7872838901700DC6B8E /* CountriesData.swift */,
+				6328D7892838902700DC6B8E /* CountryInfo.swift */,
+				6328D78B2838903400DC6B8E /* Symptom.swift */,
+				6328D78D2838904200DC6B8E /* Prevention.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6328D78F283890AD00DC6B8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6328D790283890BA00DC6B8E /* Home */,
+				6328D7912838911000DC6B8E /* Global */,
+				6328D7922838912E00DC6B8E /* Safety */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6328D790283890BA00DC6B8E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				63494BCE2601628200A9E58C /* Home.swift */,
+				63494BE82601661400A9E58C /* RedBackground.swift */,
+				63B7EED1260526A9000ABE92 /* Background.swift */,
+				63494BEB260168AD00A9E58C /* GlobalUpdateCard.swift */,
+				63821B8726094AC500381B2C /* Header.swift */,
+				63B816912602A5CE0007F675 /* StateCardList.swift */,
+				63494BEE2601713900A9E58C /* StateCard.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6328D7912838911000DC6B8E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				63494BDC260162E200A9E58C /* Global.swift */,
+				636726782603C502000D5A1B /* CountryDetail.swift */,
+				636726802603F6B8000D5A1B /* MapView.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		6328D7922838912E00DC6B8E /* Safety */ = {
+			isa = PBXGroup;
+			children = (
+				63494BE02601631A00A9E58C /* SafeteyPage.swift */,
+				63821B8426094A6B00381B2C /* SymptomCardView.swift */,
+				63821B8A26094AEE00381B2C /* PreventionCardView.swift */,
+			);
+			path = Safety;
+			sourceTree = "<group>";
+		};
+		6328D7932838915B00DC6B8E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63B8168E260284A20007F675 /* TestingData.swift */,
+				63B7EECB26051025000ABE92 /* NavigationBarColor.swift */,
+				63B7EECE2605267B000ABE92 /* Color + ext.swift */,
+				63821B8E26094F4D00381B2C /* SafetyLists.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		63494BC02601628200A9E58C = {
 			isa = PBXGroup;
 			children = (
@@ -90,27 +178,13 @@
 			children = (
 				63494BCC2601628200A9E58C /* CovidTracker19App.swift */,
 				63494BE42601635600A9E58C /* ContentView.swift */,
-				63494BCE2601628200A9E58C /* Home.swift */,
-				63494BDC260162E200A9E58C /* Global.swift */,
-				636726782603C502000D5A1B /* CountryDetail.swift */,
-				636726802603F6B8000D5A1B /* MapView.swift */,
-				63494BE02601631A00A9E58C /* SafeteyPage.swift */,
+				6328D78128388F3600DC6B8E /* API */,
+				6328D78228388F7D00DC6B8E /* Model */,
+				6328D78F283890AD00DC6B8E /* View */,
+				6328D7932838915B00DC6B8E /* Helpers */,
 				63494BD02601628300A9E58C /* Assets.xcassets */,
 				63494BD52601628300A9E58C /* Info.plist */,
 				63494BD22601628300A9E58C /* Preview Content */,
-				63B7EED1260526A9000ABE92 /* Background.swift */,
-				63494BE82601661400A9E58C /* RedBackground.swift */,
-				63494BEB260168AD00A9E58C /* GlobalUpdateCard.swift */,
-				63494BEE2601713900A9E58C /* StateCard.swift */,
-				63B816912602A5CE0007F675 /* StateCardList.swift */,
-				63B8168B2602814A0007F675 /* Data.swift */,
-				63B8168E260284A20007F675 /* TestingData.swift */,
-				63B7EECB26051025000ABE92 /* NavigationBarColor.swift */,
-				63B7EECE2605267B000ABE92 /* Color + ext.swift */,
-				63821B8726094AC500381B2C /* Header.swift */,
-				63821B8426094A6B00381B2C /* SymptomCardView.swift */,
-				63821B8A26094AEE00381B2C /* PreventionCardView.swift */,
-				63821B8E26094F4D00381B2C /* SafetyLists.swift */,
 			);
 			path = CovidTracker19;
 			sourceTree = "<group>";
@@ -199,18 +273,24 @@
 				63494BE52601635600A9E58C /* ContentView.swift in Sources */,
 				63B7EECF2605267B000ABE92 /* Color + ext.swift in Sources */,
 				636726812603F6B8000D5A1B /* MapView.swift in Sources */,
+				6328D7862838900600DC6B8E /* StateData.swift in Sources */,
 				63494BEC260168AD00A9E58C /* GlobalUpdateCard.swift in Sources */,
 				63B816922602A5CE0007F675 /* StateCardList.swift in Sources */,
 				63494BDD260162E200A9E58C /* Global.swift in Sources */,
 				63494BEF2601713900A9E58C /* StateCard.swift in Sources */,
 				63821B8F26094F4D00381B2C /* SafetyLists.swift in Sources */,
+				6328D78E2838904200DC6B8E /* Prevention.swift in Sources */,
+				6328D78C2838903400DC6B8E /* Symptom.swift in Sources */,
+				6328D7882838901700DC6B8E /* CountriesData.swift in Sources */,
 				63821B8826094AC500381B2C /* Header.swift in Sources */,
+				6328D78428388F9400DC6B8E /* API.swift in Sources */,
 				63821B8526094A6B00381B2C /* SymptomCardView.swift in Sources */,
 				63B7EECC26051025000ABE92 /* NavigationBarColor.swift in Sources */,
 				63B7EED2260526A9000ABE92 /* Background.swift in Sources */,
 				63B8168F260284A20007F675 /* TestingData.swift in Sources */,
+				6328D78A2838902700DC6B8E /* CountryInfo.swift in Sources */,
 				63494BE12601631A00A9E58C /* SafeteyPage.swift in Sources */,
-				63B8168C2602814A0007F675 /* Data.swift in Sources */,
+				63B8168C2602814A0007F675 /* GlobalData.swift in Sources */,
 				63494BCD2601628200A9E58C /* CovidTracker19App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.CovidTracker19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -374,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.CovidTracker19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

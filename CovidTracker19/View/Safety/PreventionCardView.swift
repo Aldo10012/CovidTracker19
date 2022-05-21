@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct Prevention: Identifiable{
-    let id = UUID()
-    var img: String
-    var method: String
-    var info: String
-}
-
 struct PreventionCardView: View {
     @State var img: String
     @State var method: String

@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Symptom: Identifiable {
-    let id = UUID()
-    var name: String
-}
-
-
 struct SymptomCardView: View {
     @State var symptom: String
     @State var img: String

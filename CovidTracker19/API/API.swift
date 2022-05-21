@@ -1,51 +1,13 @@
 //
-//  Data.swift
+//  API.swift
 //  CovidTracker19
 //
-//  Created by Alberto Dominguez on 3/17/21.
+//  Created by Alberto Dominguez on 5/20/22.
 //
 
-import SwiftUI
-
-struct GlobalData: Codable, Identifiable {
-    let id = UUID()
-    var active: Int
-    var deaths: Int
-    var todayDeaths: Int
-    var recovered: Int
-    var todayRecovered: Int
-}
-
-struct StateData: Codable, Identifiable {
-    let id = UUID()
-    var state: String
-    var active: Int
-    var deaths: Int
-    var recovered: Int
-}
-
-struct CountriesData: Codable, Identifiable {
-    let id = UUID()
-    var country: String
-    var countryInfo: CountryInfo
-    var deaths: Int
-    var todayDeaths: Int
-    var recovered: Int
-    var todayRecovered: Int
-    var cases: Int
-    var active: Int
-}
-
-struct CountryInfo: Codable, Identifiable {
-    let id = UUID()
-    var lat: Double
-    var long: Double
-}
-
-
+import Foundation
 
 class Api {
-    
     
     // get global Data
     func getAllData(completion: @escaping (GlobalData) -> () ){
